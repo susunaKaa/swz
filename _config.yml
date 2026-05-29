@@ -8,7 +8,7 @@ twitter_username: yourtwitter
 github_username: susunaKaa
 linkedin_username: yourlinkedin
 
-# theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
