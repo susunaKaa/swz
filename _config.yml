@@ -2,10 +2,10 @@ title: 石文芝的主页
 description: 一个现代化的个人主页
 author: 石文芝
 email: your.email@example.com
-baseurl: "" 
-url: "https://shiwenzhi.github.io"
+baseurl: "/swz"
+url: "https://susunaKaa.github.io"
 twitter_username: yourtwitter
-github_username: shiwenzhi
+github_username: susunaKaa
 linkedin_username: yourlinkedin
 
 theme: minima
