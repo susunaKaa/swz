@@ -1,0 +1,147 @@
+---
+layout: default
+title: 首页
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        你好，我是<span class="highlight">开发者</span>
+      </h1>
+      <p class="hero-subtitle">
+        热爱编程，追求卓越，用代码改变世界
+      </p>
+      <div class="hero-buttons">
+        <a href="{{ "/projects/" | relative_url }}" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> 查看项目
+        </a>
+        <a href="{{ "/about/" | relative_url }}" class="btn btn-secondary">
+          <i class="fas fa-user"></i> 了解更多
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="code-animation">
+        <pre><code class="language-javascript">
+const developer = {
+  name: "Your Name",
+  skills: ["JavaScript", "Python", "Web"],
+  passion: "Building amazing things",
+  currentFocus: "Learning & Creating"
+};
+
+console.log("Welcome to my world!");
+        </code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrapper">
+    <h2 class="section-title">我的专长</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>前端开发</h3>
+        <p>精通 HTML, CSS, JavaScript，熟练使用 React, Vue 等现代框架</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3>后端开发</h3>
+        <p>熟悉 Node.js, Python，有丰富的 API 开发和数据库设计经验</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>移动开发</h3>
+        <p>掌握 React Native 和 Flutter，开发跨平台移动应用</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>数据库设计</h3>
+        <p>熟练使用 MySQL, MongoDB, PostgreSQL 等数据库系统</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recent-projects">
+  <div class="wrapper">
+    <h2 class="section-title">最新项目</h2>
+    <div class="projects-grid">
+      {% assign projects = site.projects | sort: date | reverse | limit: 3 %}
+      {% for project in projects %}
+      <div class="project-card">
+        {% if project.image %}
+        <div class="project-card-image">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+        </div>
+        {% else %}
+        <div class="project-card-image placeholder">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        {% endif %}
+        <div class="project-card-content">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.excerpt | strip_html | truncatewords: 20 }}</p>
+          <div class="project-card-footer">
+            <a href="{{ project.url | relative_url }}" class="btn btn-small">查看详情</a>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="no-projects">
+        <p>项目即将上线，敬请期待！</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="section-cta">
+      <a href="{{ "/projects/" | relative_url }}" class="btn btn-outline">查看所有项目</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrapper">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">完成项目</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">年经验</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">技术栈</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">热情</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrapper">
+    <h2>准备开始合作了吗？</h2>
+    <p>无论是项目合作、技术交流还是其他任何问题，我都很乐意与你交流</p>
+    <a href="{{ "/contact/" | relative_url }}" class="btn btn-primary btn-large">
+      <i class="fas fa-envelope"></i> 联系我
+    </a>
+  </div>
+</section>

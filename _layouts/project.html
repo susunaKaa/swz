@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="project-page">
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+    <p class="project-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+    <div class="project-meta">
+      {% if page.technologies %}
+      <div class="project-technologies">
+        {% for tech in page.technologies %}
+        <span class="tech-tag">{{ tech }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if page.date %}
+      <span class="project-date">{{ page.date | date: "%Y年%m月" }}</span>
+      {% endif %}
+    </div>
+  </header>
+  
+  {% if page.image %}
+  <div class="project-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+  
+  <div class="project-content">
+    {{ content }}
+  </div>
+  
+  {% if page.demo_url or page.github_url %}
+  <div class="project-links">
+    {% if page.demo_url %}
+    <a href="{{ page.demo_url }}" class="btn btn-primary" target="_blank">
+      <i class="fas fa-external-link-alt"></i> 查看演示
+    </a>
+    {% endif %}
+    {% if page.github_url %}
+    <a href="{{ page.github_url }}" class="btn btn-secondary" target="_blank">
+      <i class="fab fa-github"></i> 查看代码
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+</article>

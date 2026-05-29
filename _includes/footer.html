@@ -1,0 +1,49 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>{{ site.title | escape }}</h3>
+        <p>{{ site.description }}</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>快速链接</h3>
+        <ul class="footer-links">
+          <li><a href="{{ "/" | relative_url }}">首页</a></li>
+          <li><a href="{{ "/about/" | relative_url }}">关于我</a></li>
+          <li><a href="{{ "/projects/" | relative_url }}">项目</a></li>
+          <li><a href="{{ "/blog/" | relative_url }}">博客</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>社交媒体</h3>
+        <div class="social-links">
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+          <a href="{{ "/feed.xml" | relative_url }}" target="_blank" aria-label="RSS Feed">
+            <i class="fas fa-rss"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ "now" | date: "%Y" }} {{ site.title | escape }}. 保留所有权利。</p>
+      <p>使用 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建，托管于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    </div>
+  </div>
+</footer>
