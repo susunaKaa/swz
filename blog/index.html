@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客 - 石文芝的主页</title>
+  <meta name="description" content="一个现代化的个人主页">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/swz/assets/css/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="site-nav">
+        <a href="/swz/" class="site-title">石文芝的主页</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/swz/" class="nav-link">首页</a></li>
+          <li><a href="/swz/blog/" class="nav-link">博客</a></li>
+          <li><a href="/swz/projects/" class="nav-link">项目</a></li>
+          <li><a href="/swz/about/" class="nav-link">关于</a></li>
+          <li><a href="/swz/contact/" class="nav-link">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="wrapper">
+      <div class="blog-page">
+  <header class="page-header">
+    <h1>博客文章</h1>
+    <p>分享我的技术见解、学习心得和生活感悟</p>
+  </header>
+  
+  <div class="blog-list">
+    
+    
+    <article class="blog-post-item">
+      <div class="post-date">
+        <span class="day">20</span>
+        <span class="month">Jan</span>
+        <span class="year">2024</span>
+      </div>
+      
+      <div class="post-content">
+        <h2>
+          <a href="/swz/%E6%8A%80%E6%9C%AF/jekyll/2024/01/20/jekyll-blog-journey.html">我的 Jekyll 博客搭建之旅</a>
+        </h2>
+        
+        
+        <p class="post-excerpt">记录我使用 Jekyll 搭建个人博客的完整过程，从环境配置到部署上线的所有步骤。</p>
+        
+        
+        
+        <div class="post-categories">
+          
+          <span class="category">技术</span>
+          
+          <span class="category">Jekyll</span>
+          
+        </div>
+        
+        
+        <a href="/swz/%E6%8A%80%E6%9C%AF/jekyll/2024/01/20/jekyll-blog-journey.html" class="read-more">
+          阅读全文 <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+    
+  </div>
+</div>
+
+<style>
+.blog-page {
+  padding: 3rem 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+.blog-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.blog-post-item:hover {
+  padding-left: 1rem;
+}
+
+@media (max-width: 640px) {
+  .blog-post-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .post-date {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+}
+
+.post-date {
+  text-align: center;
+}
+
+.post-date .day {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #667eea;
+  line-height: 1;
+}
+
+.post-date .month,
+.post-date .year {
+  display: block;
+  font-size: 0.875rem;
+  color: #718096;
+  text-transform: uppercase;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-content h2 a {
+  color: #2d3748;
+}
+
+.post-content h2 a:hover {
+  color: #667eea;
+}
+
+.post-excerpt {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.post-categories {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  background-color: #f7fafc;
+  color: #667eea;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #667eea;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  gap: 0.75rem;
+}
+
+.no-posts {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #718096;
+}
+
+.no-posts i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #cbd5e0;
+}
+
+.no-posts h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+</style>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>关于我</h3>
+          <p>石文芝 - 一个现代化的个人主页</p>
+        </div>
+        <div class="footer-section">
+          <h3>快速链接</h3>
+          <ul class="footer-links">
+            <li><a href="/swz/">首页</a></li>
+            <li><a href="/swz/blog/">博客</a></li>
+            <li><a href="/swz/projects/">项目</a></li>
+            <li><a href="/swz/about/">关于</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>联系我</h3>
+          <div class="social-links">
+            
+            <a href="https://github.com/susunaKaa" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+            
+            
+            <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+            
+            
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 石文芝. 使用 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/swz/assets/js/main.js"></script>
+</body>
+</html>

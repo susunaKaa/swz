@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目 - 石文芝的主页</title>
+  <meta name="description" content="一个现代化的个人主页">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/swz/assets/css/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="site-nav">
+        <a href="/swz/" class="site-title">石文芝的主页</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/swz/" class="nav-link">首页</a></li>
+          <li><a href="/swz/blog/" class="nav-link">博客</a></li>
+          <li><a href="/swz/projects/" class="nav-link">项目</a></li>
+          <li><a href="/swz/about/" class="nav-link">关于</a></li>
+          <li><a href="/swz/contact/" class="nav-link">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="wrapper">
+      <div class="projects-page">
+  <header class="page-header">
+    <h1>我的项目</h1>
+    <p>这里展示了我参与开发的一些项目，每个项目都承载着我对技术的热爱和追求。</p>
+  </header>
+  
+  <div class="projects-filter">
+    <button class="filter-btn active" data-filter="all">全部</button>
+    <button class="filter-btn" data-filter="web">Web应用</button>
+    <button class="filter-btn" data-filter="mobile">移动应用</button>
+    <button class="filter-btn" data-filter="tool">工具</button>
+  </div>
+  
+  <div class="projects-list">
+    
+    
+    <article class="project-item" data-category="mobile">
+      <div class="project-item-image">
+        
+        <img src="/swz/assets/images/projects/weather-app.jpg" alt="天气查询小程序">
+        
+      </div>
+      
+      <div class="project-item-content">
+        <h2>天气查询小程序</h2>
+        
+        <p class="project-subtitle">微信小程序开发实践</p>
+        
+        
+        <p class="project-excerpt">一个简洁美观的天气查询微信小程序，支持实时天气和未来天气预报。</p>
+        
+        
+        <div class="project-tags">
+          
+          <span class="tag">微信小程序</span>
+          
+          <span class="tag">JavaScript</span>
+          
+          <span class="tag">Weather API</span>
+          
+          <span class="tag">CSS3</span>
+          
+        </div>
+        
+        
+        <div class="project-actions">
+          <a href="/swz/projects/weather-app/" class="btn btn-primary btn-small">
+            查看详情
+          </a>
+          
+          
+          <a href="https://github.com/yourusername/weather-miniapp" class="btn btn-secondary btn-small" target="_blank">
+            <i class="fab fa-github"></i> 源代码
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    <article class="project-item" data-category="web">
+      <div class="project-item-image">
+        
+        <img src="/swz/assets/images/projects/task-manager.jpg" alt="任务管理应用">
+        
+      </div>
+      
+      <div class="project-item-content">
+        <h2>任务管理应用</h2>
+        
+        <p class="project-subtitle">简洁高效的任务管理工具</p>
+        
+        
+        <p class="project-excerpt">一个功能完整的任务管理应用，支持任务创建、分类、提醒等功能。</p>
+        
+        
+        <div class="project-tags">
+          
+          <span class="tag">React</span>
+          
+          <span class="tag">Node.js</span>
+          
+          <span class="tag">MongoDB</span>
+          
+          <span class="tag">Express</span>
+          
+          <span class="tag">Redux</span>
+          
+        </div>
+        
+        
+        <div class="project-actions">
+          <a href="/swz/projects/task-manager/" class="btn btn-primary btn-small">
+            查看详情
+          </a>
+          
+          <a href="https://task-manager-demo.herokuapp.com" class="btn btn-outline btn-small" target="_blank">
+            <i class="fas fa-external-link-alt"></i> 在线演示
+          </a>
+          
+          
+          <a href="https://github.com/yourusername/task-manager" class="btn btn-secondary btn-small" target="_blank">
+            <i class="fab fa-github"></i> 源代码
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    <article class="project-item" data-category="web">
+      <div class="project-item-image">
+        
+        <img src="/swz/assets/images/projects/blog.jpg" alt="个人博客系统">
+        
+      </div>
+      
+      <div class="project-item-content">
+        <h2>个人博客系统</h2>
+        
+        <p class="project-subtitle">基于 Jekyll 的现代化个人博客</p>
+        
+        
+        <p class="project-excerpt">一个使用 Jekyll 构建的现代化个人博客系统，具有响应式设计和优雅的用户界面。</p>
+        
+        
+        <div class="project-tags">
+          
+          <span class="tag">Jekyll</span>
+          
+          <span class="tag">HTML5</span>
+          
+          <span class="tag">CSS3</span>
+          
+          <span class="tag">JavaScript</span>
+          
+          <span class="tag">GitHub Pages</span>
+          
+        </div>
+        
+        
+        <div class="project-actions">
+          <a href="/swz/projects/personal-blog/" class="btn btn-primary btn-small">
+            查看详情
+          </a>
+          
+          <a href="https://yourusername.github.io" class="btn btn-outline btn-small" target="_blank">
+            <i class="fas fa-external-link-alt"></i> 在线演示
+          </a>
+          
+          
+          <a href="https://github.com/yourusername/yourusername.github.io" class="btn btn-secondary btn-small" target="_blank">
+            <i class="fab fa-github"></i> 源代码
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+  </div>
+</div>
+
+<style>
+.projects-page {
+  padding: 3rem 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  color: #718096;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.projects-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-item-image {
+  height: 200px;
+  background-color: #f7fafc;
+  overflow: hidden;
+}
+
+.project-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 4rem;
+}
+
+.project-item-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-item-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.project-excerpt {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: #f7fafc;
+  color: #667eea;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.no-projects {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #718096;
+}
+
+.no-projects i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #cbd5e0;
+}
+
+.no-projects h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-item');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');
+      
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      projectItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        
+        if (filter === 'all' || category === filter) {
+          item.style.display = 'grid';
+          item.style.animation = 'fadeIn 0.5s ease-out';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>关于我</h3>
+          <p>石文芝 - 一个现代化的个人主页</p>
+        </div>
+        <div class="footer-section">
+          <h3>快速链接</h3>
+          <ul class="footer-links">
+            <li><a href="/swz/">首页</a></li>
+            <li><a href="/swz/blog/">博客</a></li>
+            <li><a href="/swz/projects/">项目</a></li>
+            <li><a href="/swz/about/">关于</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>联系我</h3>
+          <div class="social-links">
+            
+            <a href="https://github.com/susunaKaa" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+            
+            
+            <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+            
+            
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 石文芝. 使用 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/swz/assets/js/main.js"></script>
+</body>
+</html>
