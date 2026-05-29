@@ -1,7 +1,7 @@
 ---
 title: "我的 Jekyll 博客搭建之旅"
 date: 2024-01-20
-author: Your Name
+author: 石文芝
 categories:
   - 技术
   - Jekyll
@@ -12,7 +12,7 @@ tags:
 excerpt: 记录我使用 Jekyll 搭建个人博客的完整过程，从环境配置到部署上线的所有步骤。
 ---
 
-最近，我决定搭建一个属于自己的个人博客。经过一番调研，我选择了 Jekyll + GitHub Pages 的方案。在这篇文章中，我将分享整个搭建过程。
+我是云南大学信息学院的学生石文芝，彝族。最近，我决定搭建一个属于自己的个人博客。经过一番调研，我选择了 Jekyll + GitHub Pages 的方案。在这篇文章中，我将分享整个搭建过程。
 
 ## 为什么选择 Jekyll？
 

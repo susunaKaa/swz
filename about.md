@@ -12,7 +12,7 @@ permalink: /about/
     <div class="about-intro">
       <h1>关于我</h1>
       <p class="lead">
-        你好！我是一名热爱技术的开发者，专注于构建优雅、高效的数字产品。
+        你好！我叫<strong>石文芝</strong>，是一名来自云南的<strong>彝族</strong>学生，热爱技术与创新。
       </p>
     </div>
   </div>
@@ -21,13 +21,44 @@ permalink: /about/
     <section class="about-section">
       <h2>我的故事</h2>
       <p>
-        从第一次接触编程开始，我就被代码的魅力深深吸引。每一行代码都像是一块积木，可以搭建出无限可能的世界。
-        多年来，我不断学习新技术，挑战自我，致力于用技术解决实际问题。
+        我是云南大学信息学院的一名学生，彝族。2026年春季学期，我参加了创新实验课程，
+        学习了 Jekyll 静态网站开发技术。从第一次搭建个人博客开始，我就被静态网站的简洁与高效深深吸引。
       </p>
       <p>
-        我相信技术不仅仅是工具，更是一种创造力的表达方式。无论是前端界面的精致打磨，
-        还是后端架构的精心设计，我都追求极致的用户体验和代码质量。
+        在这个实验中，我学习了如何使用 Jekyll 构建现代化的个人主页和博客系统，
+        如何使用 Docker 容器化开发环境，以及如何通过 GitHub Actions 实现自动化部署。
+        这些技能不仅拓宽了我的技术视野，也培养了我解决实际问题的能力。
       </p>
+    </section>
+    
+    <section class="about-section">
+      <h2>个人基本信息</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>姓名</h3>
+          <p>石文芝</p>
+        </div>
+        <div class="info-item">
+          <h3>民族</h3>
+          <p>彝族</p>
+        </div>
+        <div class="info-item">
+          <h3>学校</h3>
+          <p>云南大学</p>
+        </div>
+        <div class="info-item">
+          <h3>学院</h3>
+          <p>信息学院</p>
+        </div>
+        <div class="info-item">
+          <h3>年级</h3>
+          <p>2025级</p>
+        </div>
+        <div class="info-item">
+          <h3>课程</h3>
+          <p>创新实验</p>
+        </div>
+      </div>
     </section>
     
     <section class="about-section">
